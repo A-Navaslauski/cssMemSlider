@@ -141,4 +141,29 @@ body {
 }
 
 
+@media (max-width: 480px), (max-height: 480px) {
+    .main {
+        padding: 0;
+    }
+
+    .container-2 {
+        flex-direction: column-reverse;
+        margin: 0.6em auto;
+    }
+
+    .text {
+        font-size: 2.3em;
+    }
+
+    .slider-wrapper {
+        margin: 0 0 0.5em;
+        align-self: center;
+    }
+
+    #slider-1:checked~.mem-pic-wrapper>.mem-pic:nth-child(1),
+    #slider-1:checked~.container-2 .text--1 {
+        transform: translate(-2%);
+        margin: 0 0 0 2%;
+    }
+}
 
